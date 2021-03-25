@@ -9,44 +9,47 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Slap Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
-    <header class="container-fluid">
-        <h1 class="text-center">SLAP GAME</h1>
+    <header class="container-fluid bg-success bigfont">
+        <h1 class="text-center m-0 py-3 title"><b>SLAP GAME</b></h1>
     </header>
-    <main class="container-fluid">
+
+
+    <main class="container-fluid bg-info">
         <div class="row">
-            <div class="col">
-                <div class="card mb-3">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="/photos/spider.jpg" class="img-thumbnail target" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h1 id="name"> Name </h1>
-                                <span>Health:<span id="health">--</span></span>
-                                <span>Hit:<span id="hit">0</span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
+            <div class="col-md-4 m-md-5">
+                <img src="/photos/spider.jpg" class="img-thumbnail target spider boarder-0" alt="scary spider">
+            </div>
+
+            <div class="col-md-4 m-md-5  text-center">
+                <h1 id="name"> Name </h1>
+                    <span>Health:<span id="health">--</span></span>
+                    <span class="">Hit:<span id="hit">0</span></span>
             </div>
         </div>
     </main>
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <button onclick="attack('slap')">slap</button>
-                <button onclick="attack('kick')">kick</button>
-                <button onclick="attack('punch')">punch</button>
+
+
+
+    <footer class="container-fluid bg-danger bigfont">
+        <div class="row p-md-3 text-center">
+            <div class="col-12 col-md-6 py-3">
+                <button class="bg-primary btn" onclick="attack('slap')"><b>slap</b> </button>
+                <button class="bg-primary btn" onclick="attack('kick')"><b>kick</b> </button>
+                <button class="bg-primary btn" onclick="attack('punch')"><b>punch</b> </button>
             </div>
-            <div class="div-col">
-                <button onclick="giveWeapon('sword')">sword</button>
-                <button onclick="giveWeapon('gun')">gun</button>
-                <button onclick="giveWeapon('shtick')">shtick</button>
+            <div class="col-12 col-md-6 my-2">
+                <button class="bg-warning btn" onclick="giveWeapon('sword')"><b>sword</b></button>
+                <button class="bg-warning btn" onclick="giveWeapon('gun')"><b>gun</b></button>
+                <button class="bg-warning btn" onclick="giveWeapon('shtick')"><b>shtick</b></button>
             </div>
         </div>
     </footer>
