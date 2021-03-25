@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Slap Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <h1 class="text-center">SLAP GAME</h1>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="/photos/spider.jpg" class="img-thumbnail target" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h1 id="name"> Name </h1>
+                                <span>Health:<span id="health">--</span></span>
+                                <span>Hit:<span id="hit">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <button onclick="attack('slap')">slap</button>
+                <button onclick="attack('kick')">kick</button>
+                <button onclick="attack('punch')">punch</button>
+            </div>
+            <div class="div-col">
+                <button onclick="giveWeapon('sword')">sword</button>
+                <button onclick="giveWeapon('gun')">gun</button>
+                <button onclick="giveWeapon('shtick')">shtick</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
