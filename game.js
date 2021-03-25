@@ -84,7 +84,7 @@ function playerName(name) {
 
 function minimumHealth() {
     if (target.steve.health <= 0) {
-        document.getElementById('health').innerText = "You Died"
+        document.getElementById('health').innerText = "You Killed Steve"
     }
 }
 
